@@ -34,7 +34,7 @@ const FAQItem = ({ item }: { item: FAQItem }) => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="mt-2 text-gray-400 whitespace-pre-line"
+            className="mt-2 text-gray-400 whitespace-pre-line text-justify"
           >
             {item.answer}
           </motion.div>
