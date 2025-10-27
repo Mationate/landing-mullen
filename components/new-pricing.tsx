@@ -76,7 +76,7 @@ export default function NewPricing() {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">SUSCRIPCIÓN ACADEMIA</h3>
                 <div className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-color3bs to-purple-500 mb-1">
-                  39,99€
+                  $30 USD
                 </div>
                 <div className="text-lg text-gray-300 font-medium">AL MES</div>
               </div>
@@ -104,7 +104,8 @@ export default function NewPricing() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full bg-gradient-to-r from-color3bs to-color3bsdarker hover:from-color3bsdarker hover:to-color3bs text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl text-base mb-4"
+                  onClick={() => window.open('https://academia.andresmullen.com', '_blank')}
+                  className="w-full bg-gradient-to-r from-color3bs to-color3bsdarker hover:from-color3bsdarker hover:to-color3bs text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl text-base mb-4 cursor-pointer"
                 >
                   🚀 Empezar Ahora
                 </motion.button>
@@ -114,18 +115,7 @@ export default function NewPricing() {
           </motion.div>
         </div>
         
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-16"
-        >
-          <p className="text-gray-400 mb-6">¿Tienes dudas? Contáctanos y te ayudamos a elegir el plan perfecto para ti.</p>
-          <button className="text-color3bs hover:text-color3bsdarker font-semibold transition-colors duration-300">
-            Hablar con un Experto →
-          </button>
-        </motion.div>
+      
       </div>
       
       {/* Background Elements */}
