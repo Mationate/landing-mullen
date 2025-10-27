@@ -29,11 +29,13 @@ export default function Header() {
           {/* Logo ajustado */}
           <Link href="/" aria-label="Cruip">
             <Image
-              src="/images/academywhite.png"
+              src="/images/logocutstate.png"
               alt="Logo"
-              width={48}
-              height={48}
-              className="w-12 h-12"
+              width={1024}
+              height={384}
+              className="h-16 w-32 object-contain"
+              priority
+              quality={100}
             />
           </Link>
 
@@ -71,7 +73,7 @@ export default function Header() {
             {showEnterButton && (
               <a
                 className="btn text-white bg-color3bs hover:bg-color3bsdarker px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:shadow-lg fade-in-animation"
-                href="https://academia.MullenPeluqueros.com"
+                href="https://academia.andresmullen.com"
               >
                 Entrar
               </a>

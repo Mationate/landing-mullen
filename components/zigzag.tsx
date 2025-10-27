@@ -6,31 +6,14 @@ import { Play, BookOpen, TrendingUp, Users, Award, CheckCircle } from 'lucide-re
 const courses = [
   {
     id: 1,
-    category: "Videos explicativos",
+    category: "Aprende todo sobre barbería",
     title: "Fundamentos de Corte",
     description: "Curso de fundamentos de corte para que te inicies en el mundo de la Barbería.",
     features: ["Teoría completa", "Práctica guiada", "Elementos esenciales"],
     icon: <BookOpen className="w-6 h-6" />,
     placeholder: "Imagen del curso 1"
   },
-  {
-    id: 2,
-    category: "Demostraciones en video",
-    title: "Tendencias",
-    description: "Descubre y aprende como se crean los cortes de Tendencia, práctico y detallado.",
-    features: ["Herramientas avanzadas y de última tendencia", "Transformar tu estilo y genera tendencia"],
-    icon: <TrendingUp className="w-6 h-6" />,
-    placeholder: "Imagen del curso 2"
-  },
-  {
-    id: 3,
-    category: "Masterclass avanzada",
-    title: "Técnicas Profesionales",
-    description: "Domina las técnicas más avanzadas utilizadas por los mejores barberos profesionales.",
-    features: ["Técnicas de corte avanzadas", "Manejo de herramientas profesionales", "Acabados perfectos"],
-    icon: <Award className="w-6 h-6" />,
-    placeholder: "Imagen del curso 3"
-  }
+  
 ]
 
 export default function Zigzag() {
@@ -129,41 +112,14 @@ export default function Zigzag() {
                     {course.id}
                   </div>
                   
-                  {/* TODO: Reemplazar con imagen real cuando esté lista */}
-                   {/* <img src={`/images/curso-${course.id}-screenshot.png`} alt={course.placeholder} className="w-full aspect-video rounded-2xl object-cover" /> */}
-                   
-                   {/* Placeholder Content */}
-                   <div className="aspect-video bg-gradient-to-br from-color3bs/20 to-purple-600/20 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                     <div className="absolute inset-0 bg-gradient-to-br from-gray-700/50 to-gray-800/50" />
-                     <div className="relative z-10 text-center">
-                       <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                         <Play className="w-8 h-8 text-white/70" />
-                       </div>
-                       <div className="text-white font-bold text-lg mb-2">{course.placeholder}</div>
-                       <div className="text-white/60 text-sm">Vista previa del contenido</div>
-                     </div>
-                     
-                     {/* Decorative Elements */}
-                     <div className="absolute top-4 left-4 w-24 h-3 bg-white/20 rounded" />
-                     <div className="absolute top-8 left-4 w-32 h-2 bg-white/10 rounded" />
-                     <div className="absolute bottom-4 right-4 w-20 h-6 bg-color3bs/30 rounded" />
-                   </div>
+                  {/* Course Image */}
+                   <img 
+                     src="/images/course1.JPG" 
+                     alt={course.title} 
+                     className="w-full aspect-video rounded-2xl object-cover shadow-lg"
+                   />
                   
-                  {/* Course Info */}
-                  <div className="mt-6 p-4 bg-gray-800/50 rounded-xl">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <Users className="w-4 h-4 text-gray-400" />
-                        <span className="text-gray-400 text-sm">+1,200 estudiantes</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        {[...Array(5)].map((_, i) => (
-                          <div key={i} className="w-3 h-3 bg-yellow-400 rounded-full" />
-                        ))}
-                        <span className="text-gray-400 text-sm ml-2">4.9</span>
-                      </div>
-                    </div>
-                  </div>
+                 
                 </motion.div>
               </div>
             </motion.div>

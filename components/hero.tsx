@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/herowallp.jpg"
+          src="/images/bg.jpg"
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
@@ -23,8 +23,8 @@ export default function Hero() {
               className="text-5xl sm:text-6xl md:text-8xl lg:text-[6rem] text-white tracking-tight font-perfecto leading-tight"
               data-aos="fade-up"
             >
-              <span className="block">MULLEN</span>
-              <span className="block">PELUQUEROS</span>
+              <span className="block">ACADEMIA</span>
+              <span className="block">ANDRES MULLEN</span>
             </h1>
 
             <p
@@ -32,8 +32,8 @@ export default function Hero() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Una comunidad de peluqueros que buscan crecer y mejorar en el mundo de la
-              peluquería.
+              Una comunidad de barberos que buscan crecer y mejorar en el mundo de la
+              barbería.
             </p>
 
             {/* Botones */}
@@ -42,7 +42,7 @@ export default function Hero() {
               <div data-aos="fade-up" data-aos-delay="400">
                 <a
                   className="btn text-white bg-color3bs hover:bg-color3bsdarker w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl text-center block"
-                  href="https://academia.MullenPeluqueros.com"
+                  href="https://academia.andresmullen.com"
                 >
                   Entrar
                 </a>

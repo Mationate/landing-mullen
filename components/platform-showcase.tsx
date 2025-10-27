@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Monitor, Smartphone, Tablet, Play, Star, Users, BookOpen, Award } from 'lucide-react'
 
 const platformFeatures = [
@@ -11,8 +12,8 @@ const platformFeatures = [
   },
   {
     icon: <Smartphone className="w-6 h-6" />,
-    title: "App Móvil",
-    description: "Aprende desde cualquier lugar con nuestra app móvil"
+    title: "Para móviles",
+    description: "Completamente adaptado para dispositivos móviles"
   },
   {
     icon: <BookOpen className="w-6 h-6" />,
@@ -21,8 +22,8 @@ const platformFeatures = [
   },
   {
     icon: <Award className="w-6 h-6" />,
-    title: "Certificaciones",
-    description: "Obtén certificados oficiales al completar los cursos"
+    title: "Comunidad en línea",
+    description: "Comparte tu aprendizaje y conecta con otros barberos"
   }
 ]
 
@@ -30,21 +31,15 @@ const screenshots = [
   {
     title: "Dashboard Principal",
     description: "Vista general de tu progreso y cursos disponibles",
-    image: "/images/platform-dashboard.jpg",
-    features: ["Progreso en tiempo real", "Cursos recomendados", "Estadísticas personales"]
+    image: "/images/dashboard.png",
+    features: ["Progreso en tiempo real", "Cursos recomendados"]
   },
   {
     title: "Reproductor de Video",
     description: "Experiencia de aprendizaje inmersiva con videos HD",
-    image: "/images/platform-video.jpg",
+    image: "/images/videoplayer.png",
     features: ["Calidad 4K", "Subtítulos", "Velocidad ajustable"]
   },
-  {
-    title: "Biblioteca de Técnicas",
-    description: "Acceso completo a todas las técnicas de barbería",
-    image: "/images/platform-library.jpg",
-    features: ["Búsqueda avanzada", "Favoritos", "Notas personales"]
-  }
 ]
 
 export default function PlatformShowcase() {
@@ -153,27 +148,48 @@ export default function PlatformShowcase() {
                       <div className="w-3 h-3 bg-green-500 rounded-full" />
                     </div>
                     <div className="flex-1 bg-gray-700 rounded-lg px-3 py-1 ml-4">
-                      <div className="text-xs text-gray-400">academy.andres-mullen.com</div>
+                      <div className="text-xs text-gray-400">academia.andresmullen.com</div>
                     </div>
                   </div>
                   
-                  {/* TODO: Reemplazar con imagen real cuando esté lista */}
-                  {/* <img src={screenshot.image} alt={screenshot.title} className="w-full aspect-video rounded-lg object-cover" /> */}
-                  
-                  {/* Screenshot Content Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-color3bs/20 to-purple-600/20 rounded-lg flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-700/50 to-gray-800/50" />
-                    <div className="relative z-10 text-center">
-                      <Play className="w-16 h-16 text-white/70 mx-auto mb-4" />
-                      <div className="text-white/70 font-medium">{screenshot.title}</div>
-                      <div className="text-white/50 text-sm mt-2">Vista previa de la plataforma</div>
+                  {/* Screenshots with real images */}
+                  {index === 0 ? (
+                    /* Dashboard Screenshot */
+                    <Image
+                      src="/images/dashboard.png"
+                      alt={screenshot.title}
+                      width={2940}
+                      height={1676}
+                      className="w-full aspect-video rounded-lg object-cover"
+                      quality={100}
+                      priority
+                    />
+                  ) : index === 1 ? (
+                    /* Video Player Screenshot */
+                    <Image
+                      src="/images/videoplayer.png"
+                      alt={screenshot.title}
+                      width={2940}
+                      height={1630}
+                      className="w-full aspect-video rounded-lg object-cover"
+                      quality={100}
+                    />
+                  ) : (
+                    /* Placeholder for third screenshot */
+                    <div className="aspect-video bg-gradient-to-br from-color3bs/20 to-purple-600/20 rounded-lg flex items-center justify-center relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-br from-gray-700/50 to-gray-800/50" />
+                      <div className="relative z-10 text-center">
+                        <Play className="w-16 h-16 text-white/70 mx-auto mb-4" />
+                        <div className="text-white/70 font-medium">{screenshot.title}</div>
+                        <div className="text-white/50 text-sm mt-2">Vista previa de la plataforma</div>
+                      </div>
+                      
+                      {/* Decorative Elements */}
+                      <div className="absolute top-4 left-4 w-20 h-3 bg-white/20 rounded" />
+                      <div className="absolute top-8 left-4 w-32 h-2 bg-white/10 rounded" />
+                      <div className="absolute bottom-4 right-4 w-24 h-8 bg-color3bs/30 rounded" />
                     </div>
-                    
-                    {/* Decorative Elements */}
-                    <div className="absolute top-4 left-4 w-20 h-3 bg-white/20 rounded" />
-                    <div className="absolute top-8 left-4 w-32 h-2 bg-white/10 rounded" />
-                    <div className="absolute bottom-4 right-4 w-24 h-8 bg-color3bs/30 rounded" />
-                  </div>
+                  )}
                 </motion.div>
                 
                 {/* Floating Elements */}

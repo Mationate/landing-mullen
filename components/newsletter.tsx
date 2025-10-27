@@ -10,12 +10,12 @@ export default function Newsletter() {
   const [email, setEmail] = useState('');
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const url = 'https://MullenPeluqueros.us18.list-manage.com/subscribe/post?u=b15e5abb2a0f771d6db505042&id=9f3f7eafd2';
+    const url = 'https://Academia Andres Mullen.us18.list-manage.com/subscribe/post?u=b15e5abb2a0f771d6db505042&id=9f3f7eafd2';
     jsonp(`${url}&EMAIL=${email}`, { param: 'c' }, (err, data) => {
       if (err) {
         toast.error('Hubo un error al suscribirse.');
       } else {
-        toast.success('¡Gracias por unirte a MullenPeluqueros! 💈');
+        toast.success('¡Gracias por unirte a Academia Andres Mullen! 💈');
       }
     });
   };
@@ -44,7 +44,7 @@ export default function Newsletter() {
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
               <h3 className="h3 text-white mb-2">Quieres saber más?</h3>
-              <p className="text-white text-lg">Registrate con tu mail y te mantendremos informado de las últimas novedades de MullenPeluqueros</p>
+              <p className="text-white text-lg">Registrate con tu mail y te mantendremos informado de las últimas novedades de Academia Andres Mullen</p>
             </div>
 
             {/* CTA form */}

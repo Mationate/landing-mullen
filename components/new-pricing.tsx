@@ -9,10 +9,6 @@ const monthlyFeatures = [
   'Contenido progresivo: Un nuevo módulo cada mes',
   'Método estructurado: Desde fundamentos hasta técnicas avanzadas',
   'Material exclusivo: Vídeos, teoría y comunidad privada',
-  'Sin pagos grandes: Formación flexible con suscripción mensual',
-  'Acceso al grupo privado de TELEGRAM',
-  'Corrección de los trabajos',
-  'Reuniones mensuales por ZOOM'
 ];
 
 const yearlyFeatures = [
@@ -21,7 +17,6 @@ const yearlyFeatures = [
   'Aprendizaje estructurado: Domina cada técnica a tu ritmo',
   'Material exclusivo: Vídeos detallados, teoría avanzada y comunidad privada',
   'Pago único: Sin suscripciones, paga una vez y accede para siempre',
-  'Acceso al grupo privado de TELEGRAM',
   'Corrección de los trabajos',
   'Reuniones mensuales por ZOOM'
 ];
