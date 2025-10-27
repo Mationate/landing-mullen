@@ -43,6 +43,8 @@ export default function Hero() {
                 <a
                   className="btn text-white bg-color3bs hover:bg-color3bsdarker w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl text-center block"
                   href="https://academia.andresmullen.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Entrar
                 </a>

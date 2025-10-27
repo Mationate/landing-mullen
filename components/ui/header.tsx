@@ -44,7 +44,7 @@ export default function Header() {
             {/* Botones de redes sociales */}
             <div className="flex items-center space-x-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/andres.mullen/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-color3bs transition-colors duration-300"
@@ -52,7 +52,7 @@ export default function Header() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/andres.mullen.524"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-color3bs transition-colors duration-300"
@@ -60,7 +60,7 @@ export default function Header() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@AndresMullen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-color3bs transition-colors duration-300"

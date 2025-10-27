@@ -223,6 +223,7 @@ export default function PlatformShowcase() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.open('https://academia.andresmullen.com', '_blank')}
               className="bg-gradient-to-r from-color3bs to-color3bsdarker hover:from-color3bsdarker hover:to-color3bs text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl"
             >
               🚀 Acceder a la Plataforma
