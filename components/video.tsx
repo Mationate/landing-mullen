@@ -7,7 +7,7 @@ export default function Video() {
         <iframe
                 id="video" 
                 className="w-full h-full aspect-video"
-                src="https://player.vimeo.com/video/1130539432?autoplay=1"
+                src="https://player.vimeo.com/video/1130539432"
                 frameBorder="0"
                 allow="autoplay; picture-in-picture"
                 allowFullScreen
