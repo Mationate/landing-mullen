@@ -203,10 +203,6 @@ export default function VideoCarousel() {
             </div>
           </div>
 
-          {/* Keyboard Navigation Hint */}
-          <div className="text-center mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <p className="text-sm text-muted-foreground">Usa las flechas ← → para navegar entre videos</p>
-          </div>
         </div>
       </div>
     </section>
