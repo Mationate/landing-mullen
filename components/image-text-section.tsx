@@ -52,7 +52,7 @@ export default function ImageTextSection() {
               className="w-full h-[540px] sm:h-full bg-gray-200 rounded-2xl shadow-2xl overflow-hidden"
             >
               <img
-                src="/images/3.jpeg"
+                src="/images/3.jpg"
                 alt="Corte Clásico"
                 className="w-full h-full object-cover"
               />
